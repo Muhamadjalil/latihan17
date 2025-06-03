@@ -31,7 +31,10 @@
     <h2>Contoh</h2>
     
     <p id="elemen1">menyembunyikan elemen HTML</p>
+    <p class="perlahan">sembunyi perlahan 1</p>
+    <p class="perlahan">sembunyi perlahan 2</p>
     <button id="tombol1">sembunyi</button>
+    
     
     <script>
     //memastikan document html sudah siap
@@ -39,6 +42,7 @@
     //menyembunyikan paragraf 
    $("#tombol1").click(function() {
      $("#elemen1").hide()
+     $(".perlahan").fadeOut("slow")
    })
       })
     </script>
