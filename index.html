@@ -35,6 +35,8 @@
     <p class="perlahan">sembunyi perlahan 2</p>
     <button id="tombol1">sembunyi</button>
     
+    <p id="elemen2">mengubah isi elemen</p>
+    <button id="tombol2">ubah isi</button>
     
     <script>
     //memastikan document html sudah siap
@@ -43,6 +45,11 @@
    $("#tombol1").click(function() {
      $("#elemen1").hide()
      $(".perlahan").fadeOut("slow")
+   })
+   
+   //mengubah isi paragraf 
+   $("#tombol2").click(function() {
+    $("#elemen2").html("diisi <b>huruf tebal</b>") 
    })
       })
     </script>
